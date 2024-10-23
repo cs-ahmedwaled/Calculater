@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(images/pexels-dione-neris-16825355.jpg);
+  background-size: cover;
+  backdrop-filter: blur(5px) brightness(0.5);
+}
+.container{
+  background-color: #3a4452;
+  width: 280px;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.container #screen{
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  background-color: #3b3b3b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #fff;
+  text-align: right;
+  font-size: 40px;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+.container .rows{
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.container .rows:last-child{
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+
+.container .rows .btn{
+  padding: 18px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: bold;
+  transition: .3s;
+}
+.container .rows .btn:hover{
+  background-color: #b0b0b0; 
+  transform: scale(1.03); 
+}
+
+.container .rows .operation{
+  background-color: #2196F3;
+  color: white;
+}
+.container .rows .del{
+  background-color: #f44336;
+  color: white;
+}
+.container .rows .equal{
+  background-color: #FF9800;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
